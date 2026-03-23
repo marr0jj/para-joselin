@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+  <title>De María para Joselin</title>
+
+  <style>
+    body {
+      background-color: black;
+      color: #00ffcc;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #00ffcc;
+      border: none;
+      cursor: pointer;
+    }
+    h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+    <p id="texto"></p>p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+    button:hover {
+  background: white;
+  color: black;
+}
+  </style>
+</head>
+
+<body>
+
+<h1>> Ejecutando programa...</h1>
+
+<button onclick="mensaje()">Picale aquí</button>
+
+<p id="texto"></p>p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+<script>
+function mensaje() {
+  let msg = "I may not se you everyday, but I love you everyday";
+  let i = 0;
+
+  let intervalo = setInterval(() => {
+    document.getElementById("texto").innerHTML += msg[i];
+    i++;
+
+    if (i >= msg.length) clearInterval(intervalo);
+  }, 50);
+}
+</script>
+
+</body>
+</html>
